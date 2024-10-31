@@ -1,0 +1,31 @@
+#particles-js {position: fixed;top: 0;left: 0;z-index: 1;width: 100%;height: 100%}
+/* remove canvas default margin */
+canvas{
+	display:block;
+	vertical-align:bottom;
+}
+html {background: none}
+
+html body {
+  background-color: #666;
+}
+
+
+body.login div#login {z-index: 99;position: relative;}
+
+
+@media only screen and (max-width: 767px) {
+
+body.login:before {
+  background: none repeat scroll 0 0 #000;
+  content: "";
+  height: 100%;
+  left: 0;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  width: 100%;
+  z-index: 3;
+}
+    
+}
